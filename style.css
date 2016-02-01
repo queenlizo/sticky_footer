@@ -1,0 +1,559 @@
+/*COLORS
+black
+white
+#c5a47e
+*/
+
+/*GENERAL*/
+
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+}
+
+html, body{
+    margin:0px;
+    margin-top: 0
+    padding:0px;
+}
+
+h1,h2,h3,h4 {
+  text-align: center;
+}
+
+footer {
+  color: white;
+  background: black;
+  height: 10em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  padding-top: 1cm;
+  margin-top: 0cm;
+  padding-right: .5cm;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 2.5cm;
+}
+
+a:hover {
+  color: #c5a47e !important;
+}
+
+/*SPECIFIC*/
+
+.navbar #homepage-lead,
+.navbar #contact,
+.navbar #werwirsind {
+  background-color: transparent;
+  background: transparent;
+  border-width: 0px;
+  margin-top: 0px !important;
+  background:none !important;
+  border: 0 !important;
+  box-shadow:none !important;
+  -webkit-box-shadow: none !important;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  padding-right: .75cm;
+}
+
+.navbar-static-top {
+  padding-top: 1cm;
+}
+
+.navbar a:hover {
+  background: none !important;
+}
+
+.nav li {
+  padding-right: 1cm;
+  font-size: 1.5em;
+}
+
+.active {
+  color: #c5a47e !important;
+}
+.navbar {
+    background: none !important;
+    border: none !important;
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible !important;
+    -webkit-overflow-scrolling: touch;
+    border-top: none;
+    -webkit-box-shadow: none;
+    box-shadow: none !important;
+}
+
+#homepage-lead a:link,
+#homepage-lead a:visited,
+#homepage-lead a:active,
+footer a:link,
+footer a:visited,
+footer a:active,
+#impressum a:link,
+#impressum a:visited,
+#impressum a:active,
+#contact a:link,
+#contact a:visited,
+#contact a:active,
+.center-row a,
+#contact i {
+    color:white;
+}
+
+#about-navbar {
+  min-width: 100%;
+  color: black;
+}
+
+#homepage-lead {
+  font-family: 'Open Sans Condensed', sans-serif;
+
+  background: url('../img/office.jpg') no-repeat top left;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  color: white;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#homepage-lead h1 {
+  font-size: 203px;
+  text-shadow: -2px 2px 0 rgba(0, 0, 0, 0.3), -3px 3px 1px rgba(197, 164, 126, 0.5), -4px 4px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#homepage-lead h2 {
+  font-size: 66px;
+  padding-bottom: 8cm;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#homepage-lead h4 {
+  font-size: 33px;
+  padding-top: 8cm;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+#fadein {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+#homepage-middle {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+}
+
+.email-footer {
+  background: black;
+}
+
+#about-navbar a:link,
+#about-navbar a:visited,
+#about-navbar a:active {
+    color: black;
+}
+
+hr {
+  width: 12%;
+}
+
+#werwirsind a:hover,
+#methode a:hover {
+  height: 455px;
+  width: 683px;
+	background: white;
+  opacity: 0.5;
+}
+
+#impressum {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: url('../img/desk accessories.jpg') no-repeat top left;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  color: white;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#contact {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: url('../img/typewriter and misc.jpg') no-repeat center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  color: white;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#contact p {
+  font-size: 2em;
+}
+
+#wrap {
+  min-height: 100%;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -82px 0;
+  /* Pad bottom by footer height */
+  padding: 0 0 80px 0;
+}
+
+
+#wrap > .center-container {
+  padding: 50px 0 0 0;
+  margin:0;
+}
+
+#footer > .container {
+  padding-top:5px
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.center-container {
+  height:100%;
+  display: table;
+  width:100%;
+  margin:0;
+}
+
+.center-row {
+  height:50%;
+  width:100%;
+  display: table-row;
+}
+
+.center-row > div {
+  height:100%;
+  width:50%;
+  display: table-cell;
+  border:0 solid #eee;
+  color:#fff;
+  vertical-align:middle;
+  font-size: 1em;
+}
+
+.center-row > div > p,
+.center-row > div > ul {
+  display: none;
+  }
+
+.center-row > div:hover > p,
+.center-row > div:hover > ul {
+  display: block;
+  padding: 0 .5cm 0 .5cm;
+  opacity:0;  /* make things i upon start */
+ -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-duration:.75s;
+  -moz-animation-duration:.75s;
+  animation-duration:.75s;
+      }
+
+.center-row > h2 {
+   font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.fa-arrow-circle-right {
+  color: white !important;
+}
+
+.bg-one {
+  background:#efefef url('../img/IMG_4526.jpg') top left no-repeat;
+  background-size: cover;
+}
+
+.bg-two {
+  background:#efefef url('../img/man-with-ipad.jpg')top left no-repeat;
+  background-size: cover;
+}
+
+.bg-three {
+  background:#efefef url('../img/People.jpg')top left no-repeat;
+  background-size: cover;
+}
+
+.bg-four {
+  background:#efefef url('../img/Productivity-small.jpg')top left no-repeat;
+  background-size: cover;
+}
+
+.center-row > div:hover {
+  -webkit-filter: contrast(180%);
+}
+
+#about-text a:hover {
+  color: white;
+}
+
+#werwirsind {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: url('../img/IMG_4526.jpg') top left no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  color: white;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+.Site {
+  display: table;
+  flex-direction: column;
+  height: 100vh; /* 1 */
+}
+footer {
+  flex-shrink: 0; /* 2 */
+}
+.Site-content {
+  flex: 1 0 auto; /* 2 */
+}
+
+/*MEDIA QUERIES========================================================*/
+
+@media (max-width: 700px) {
+
+  h4 {
+    font-size: 1em !important;
+  }
+
+  h1 {
+    font-size: 2em !important;
+  }
+
+  h2 {
+    font-size: 1em !important;
+  }
+
+  .nav li {
+    padding-right: 1cm;
+    font-size: 1em;
+  }
+
+  .center-row > div > p,
+  .center-row > div > ul {
+    display: block;
+    }
+
+  .center-row > div {
+    height:100%;
+    width:100%;
+    display: table-cell;
+    border:0;
+    color:#fff;
+    vertical-align: middle;
+  }
+
+  .center-row > div:hover > p,
+  .center-row > div:hover > ul,
+  .center-row > div:hover > h2 {
+    display: block;
+    padding: 0 0 0 0;
+    opacity: 1;
+    }
+
+  #homepage-lead {
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+  #homepage-lead h2 {
+    padding-bottom: 3cm;
+  }
+
+  #homepage-lead h4 {
+    padding-top: 2cm !important;
+  }
+
+  .center-row > div:hover {
+    -webkit-filter: none;
+  }
+
+  .center-row > div:hover > p,
+  .center-row > div:hover > ul
+  .center-row > div:hover > li {
+    display: block;
+    padding: 0 0 0 0;
+    opacity:1;  /* make things invisible upon start */
+   -webkit-animation: none;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: none;
+    animation: none;
+
+    -webkit-animation-fill-mode:none;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:none;
+    animation-fill-mode:none;
+    -webkit-animation-duration: none;
+    -moz-animation-duration: none;
+    animation-duration: none;
+        }
+  footer {
+    height: 200px
+  }
+}
+
+/*=============================================*/
+
+@media (max-width: 1100px) {
+  .center-row > div > p,
+  .center-row > div > ul,
+  .center-row > div > h2 {
+    display: block;
+    padding: 0 0 0 0;
+    }
+
+    #homepage-lead h1 {
+      font-size: 100px;
+      font-family: 'Open Sans Condensed', sans-serif;
+
+    }
+
+    #homepage-lead h4 {
+      font-size: 33px;
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    .center-row > div > p,
+    .center-row > div > ul {
+      display: block;
+      }
+
+    .center-row > div {
+      height:100%;
+      width:100%;
+      display: table-cell;
+      border:0;
+      color:#fff;
+      vertical-align: middle;
+    }
+
+    .center-row > div:hover > td > i {
+      text-align:center;
+    }
+
+    .center-row > div:hover > p,
+    .center-row > div:hover > ul,
+    .center-row > div:hover > h2 {
+      display: block;
+      padding: 0 0 0 0;
+      opacity: 1;
+      }
+
+      .center-row > div:hover > p,
+      .center-row > div:hover > ul
+      .center-row > div:hover > li {
+        display: block;
+        padding: 0 0 0 0;
+        opacity:1;  /* make things invisible upon start */
+       -webkit-animation: none !important;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation: none !important;
+        animation: none !important;
+
+        -webkit-animation-fill-mode:none !important;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:none !important;
+        animation-fill-mode:none !important;
+        -webkit-animation-duration: none !important;
+        -moz-animation-duration: none !important;
+        animation-duration: none !important;
+            }
+}
+
+/*=============================================*/
+
+@media  (max-width: 1300px) {
+  .center-row > div > p,
+  .center-row > div > ul,
+  .center-row > div > h2 {
+    display: block;
+    padding: 0 0 0 0;
+    padding: 0 .5cm 0 0.5cm;
+    }
+
+    .center-row > div:hover > li {
+      list-style-type: none;
+      margin-left: 1cm;
+    }
+
+    .center-row > div:hover > p,
+    .center-row > div:hover > ul
+    .center-row > div:hover > li {
+      display:table-cell;
+      padding: 0 .5cm 0 0.5cm;
+      opacity:1;  /* make things invisible upon start */
+     -webkit-animation: none;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+      -moz-animation: none;
+      animation: none;
+
+      -webkit-animation-fill-mode:none;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+      -moz-animation-fill-mode:none;
+      animation-fill-mode:none;
+      -webkit-animation-duration: none;
+      -moz-animation-duration: none;
+      animation-duration: none;
+          }
+
+  .center-row > div > li {
+    list-style-type: none;
+  }
+
+ .center-row > div:hover > li {
+         list-style-type: none;
+         padding: 0 0 0 0;
+         margin: 0 0 0 0;
+         text-align: left !important;
+ }
+
+  .center-row > div:hover {
+    text-align: center !important;
+  }
+
+ 	#impressum {
+   background: url('../img/desk accessories.jpg') no-repeat center;
+   background-size: cover;
+   background-position: cover;
+   }
+}
